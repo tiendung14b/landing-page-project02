@@ -40,6 +40,7 @@ body {
 }
 
 .btn {
+  display: inline-block;
   padding: 1.7rem 2.4rem;
   min-width: 12rem;
   border-radius: 2.45rem;
@@ -373,15 +374,6 @@ header {
   margin-left: auto;
 }
 
-.courses .row-img .item .row-2 .btn {
-  background: #171100;
-  color: white;
-}
-
-.courses .row-img .item .row-2 .btn:hover {
-  background: #ffb900;
-}
-
 /* testimonial */
 .comment {
   margin-top: 20rem;
@@ -439,6 +431,97 @@ header {
   position: absolute;
   top: 0px;
   left: 0px;
+}
+
+/* feature */
+.feature {
+  margin-top: 10rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.feature .content {
+  display: flex;
+  align-items: center;
+}
+
+.feature .img-block {
+  display: flex;
+  height: 43.8rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.feature .img-block .img-2 {
+  align-self: flex-end;
+}
+
+.feature .img-block .img-2 img {
+  width: 27rem;
+  height: 40.5rem;
+  object-fit: cover;
+  border-radius: 1.6rem;
+}
+
+.feature .info-block {
+  margin-left: auto;
+  width: 47rem;
+}
+
+.feature .info-block .desc,
+.feature .info-block .sub-desc {
+  margin-top: 1.6rem;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #5f5b53;
+}
+
+.feature .info-block .sub-desc {
+  margin-top: 1.6rem;
+}
+
+.feature .info-block .btn {
+  display: inline-block;
+  margin-top: 3.2rem;
+}
+
+/* feature-02 */
+.feature-2 {
+  padding: 10rem 0rem;
+}
+
+.feature-2 .content {
+  display: flex;
+  align-items: center;
+}
+
+.feature-2 .img {
+  margin-left: auto;
+}
+
+.feature-2 .img img {
+  width: 47rem;
+  height: 44rem;
+  object-fit: cover;
+}
+
+.feature-2 .info-block {
+  max-width: 57rem;
+}
+
+.feature-2 .info-block .desc {
+  margin-top: 1.6rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  color: #5f5b53;
+}
+
+.feature-2 .info-block .btn {
+  display: inline-block;
+  margin-top: 3.2rem;
 }
 
 /* footer */
