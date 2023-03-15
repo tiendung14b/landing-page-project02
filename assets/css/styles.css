@@ -526,7 +526,7 @@ header {
 
 .blog {
   margin-top: 10rem;
-  padding: 10rem;
+  padding: 10rem 0rem 14rem 0rem;
   background: #fffcf4;
 }
 
@@ -556,6 +556,7 @@ header {
 .blog .row-img .item {
   border-radius: 16px;
   background: white;
+  padding-bottom: 2.8rem;
 }
 
 .blog .row-img .item:hover {
@@ -567,13 +568,138 @@ header {
 }
 
 .blog .row-img .item .time {
+  display: flex;
+  align-items: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
   color: #5f5b53;
 }
 
+.blog .row-img .item .time::before {
+  display: inline-block;
+  margin-right: 0.4rem;
+  content: "";
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 999px;
+  background: #ffb900;
+}
+
+.blog .row-img .item .title-blog {
+  position: relative;
+  margin-top: 2.5rem;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  color: #171100;
+}
+
+.blog .row-img .item .title-blog::before {
+  display: inline-block;
+  position: absolute;
+  top: -1.2rem;
+  left: 0rem;
+  content: "";
+  width: 160px;
+  height: 1px;
+  background: #e2dfda;
+  border-radius: 0.5px;
+}
+
+.blog .row-img .item .btn {
+  margin-top: 1.2rem;
+}
+
 /* footer */
 footer {
-  height: 300vh;
+  background: #2e2100;
+  padding: 9.6rem 13.5rem 2.8rem 13.5rem;
+}
+
+footer .info {
+  display: flex;
+  justify-content: space-between;
+  gap: 13rem;
+}
+
+footer .info .contact .desc {
+  margin-top: 1.8rem;
+  width: 267px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #bfbcb2;
+}
+
+footer .info .contact .social {
+  display: flex;
+  align-items: center;
+  margin-top: 1.8rem;
+  gap: 1.8rem;
+}
+
+footer .info .menu ul {
+  position: relative;
+}
+
+footer .info .menu ul::before {
+  display: inline-block;
+  position: absolute;
+  top: -2.8rem;
+  left: 0rem;
+  content: "";
+  width: 130px;
+  height: 1px;
+  background: #59554b;
+}
+
+footer .info .menu span {
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: white;
+}
+
+footer .info .menu ul {
+  margin-top: 4.3rem;
+}
+
+footer .info .menu ul .item {
+  display: inline-block;
+  max-width: 23rem;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #bfbcb2;
+}
+
+footer .info .menu ul .item.item:not(:first-child) {
+  margin-top: 1.2rem;
+}
+
+footer .info .menu .item strong {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+footer .copy-right {
+  position: relative;
+  margin-top: 6.7rem;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  color: #807d74;
+}
+
+footer .copy-right::before {
+  display: inline-block;
+  position: absolute;
+  top: -2.8rem;
+  left: 0rem;
+  width: 1170px;
+  height: 1px;
+  content: "";
+  background: #59554b;
 }
