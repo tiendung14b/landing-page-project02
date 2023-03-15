@@ -45,7 +45,12 @@ body {
   border-radius: 2.45rem;
   font-weight: 600;
   text-align: center;
-  color: black;
+  color: white;
+  background-color: #171100;
+}
+
+.btn:hover {
+  background-color: #ffb900;
 }
 
 /* header */
@@ -109,8 +114,6 @@ header {
   font-size: 1.6rem;
   line-height: 2.8rem;
   padding: 1.1rem 4.2rem;
-  background: #171100;
-  color: white;
 }
 
 /* Hero */
@@ -228,7 +231,6 @@ header {
 
 .hero .info-block .btn-grp .btn {
   margin-right: 2.8rem;
-  background: #ffb900;
 }
 
 .hero .info-block .btn-grp img {
@@ -382,8 +384,7 @@ header {
 
 /* testimonial */
 .comment {
-  margin-top: 10rem;
-  padding-top: 10rem;
+  margin-top: 20rem;
   background: #2e2100;
   padding: 9.6rem 13.5rem;
 }
